@@ -6,13 +6,14 @@ db:
 title: "American Pie 2"
 titles: 
   ru: "Американский пирог 2"
-description: ""
+description: "<p>Через год после злополучного выпускного, увековеченного в «‎Американском пироге», вся тусовка снова собирается вместе, чтобы оттянуться на летних каникулах. И теперь невинный с виду пляжный домик превратится в центр молодежных вечеринок. Пятеро парней познают крепкие узы дружбы... и «Суперклей». Пять девушек познают тайны любви... и «Правило трех». И эти летние каникулы, от ночных посиделок в лагере до покладистых соседей, запомнятся им навсегда!</p>"
 source: 
   website: "http://www.americanpiemovie.com/"
   youtube: "https://www.youtube.com/c/AmericanPie"
 trailer: "https://www.youtube.com/embed/FLWu4KewJlU"
 watch:
   ivi: "https://www.ivi.ru/watch/90329"
+  youtube: "https://www.youtube.com/watch?v=fSE6_jtxDTM"
 publisher: "Universal Pictures"
 date: 2001-08-06
 tags: ["Comedy"]

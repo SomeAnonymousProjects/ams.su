@@ -13,7 +13,7 @@
     <meta property="og:site_name" content="{{ $title }}"/>
 
     {{ $desc := .Site.Params.description }}
-    {{ with .Params.description }}
+    {{ with .Params.description | plainify }}
         {{ $desc = . }}
     {{ end }}
     <meta name="description" content="{{ $desc }}"/>
