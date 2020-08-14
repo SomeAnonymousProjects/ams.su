@@ -1,0 +1,10 @@
+{{ with .Get 0 }}
+<iframe class="player-frame player-hide"
+        data-balancer="uStore"
+        id="uPlayer"
+        src="{{ printf "https://start.u-play.pro/start/ac5d5d6a109f7b2454829d66aafe9b4b/%s" . }}"
+        width="{{ $.Get "width" | default "640" }}"
+        height="{{ $.Get "height" | default "480" }}"
+        allow="fullscreen; autoplay"
+        allowfullscreen></iframe>
+{{ end }}

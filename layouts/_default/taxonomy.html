@@ -1,0 +1,16 @@
+{{ $tax := (lower .Title) }}
+{{ if eq $tax "category" }}
+{{ range $name, $taxonomy := (index .Site.Taxonomies $tax) }}
+    {{ with $.Site.GetPage (printf "/%s/%s" $tax $name) }}
+        {{ with (index $taxonomy 0) }}
+        {{ if ne .Params.hidden true }}
+        <a href="{{ .Permalink }}" class="category-link">{{ .Title }}</a>
+        {{ end }}
+        {{ end }}
+    {{ end }}
+{{ end }}
+{{ end }}
+
+{{ if eq $tax "tags" }}
+TAGS
+{{ end }}

@@ -1,0 +1,40 @@
+baseURL = "https://ams.su/"
+title = "Advanced Media Storage"
+publishdir = "./docs"
+defaultContentLanguage = "ru"
+enableGitInfo = "true"
+
+[permalinks]
+  "post" = "/:filename"
+
+[params]
+  subtitle = "Видео со всего мира"
+  description = "Смотреть видео онлайн бесплатно"
+  googleTagManagerId = "GTM-A2CDIFG"
+  collapsOrg = "debdfb607b14c06c81fb3e1c6a649503"
+  videoCDN = "wiUn3VxP5IQ6Y5gDrdARiUSFtwacPsxg"
+  uStore = "ac5d5d6a109f7b2454829d66aafe9b4b"
+  kodik = "21c5405340577c86a29a5e233be60783"
+
+[languages]
+  [languages.ru]
+    languageName = "Русский"
+    languageCode = "ru-ru"
+    title = "Advanced Media Storage"
+    weight = 1
+  [languages.en]
+    languageName = "English"
+    languageCode = "en-us"
+    title = "Advanced Media Storage"
+    weight = 2
+
+[taxonomies]
+  tag = "tags"
+  category = "category"
+
+[outputs]
+  home = ["HTML", "RSS"]
+  page = ["HTML", "JSON"]
+  section = ["HTML"]
+  taxonomy = ["HTML"]
+  term = ["HTML"]

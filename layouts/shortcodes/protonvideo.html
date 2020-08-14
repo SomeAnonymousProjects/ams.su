@@ -1,0 +1,9 @@
+{{ with .Get 0 }}
+<iframe class="player-frame"
+        data-balancer="Protonvideo"
+        width="{{ $.Get "width" | default "810" }}"
+        height="{{ $.Get "height" | default "475" }}"
+        src="{{ printf "https://protonvideo.to/iframe/%s/" . }}"
+        allow="autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+{{ end }}

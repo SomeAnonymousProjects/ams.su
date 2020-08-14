@@ -1,0 +1,15 @@
+{
+"imdb": "{{ with .Params.Db.IMDb }}{{ . }}{{ end }}",
+"kinopoisk": "{{ with .Params.Db.Kinopoisk }}{{ . }}{{ end }}",
+"resource": {
+    "website": "{{ with .Params.Source.website }}{{.}}{{ end }}",
+    "youtube": "{{ with .Params.Source.youtube }}{{.}}{{ end }}"
+    },
+"trailer": "{{ with .Params.Trailer }}{{.}}{{ end }}",
+"premiere": "{{ with .Params.Date }}{{ .Format "2006-02-01" }}{{ end }}",
+"title": "{{ .Title }}",
+"titles": {{ .Params.Titles | jsonify }},
+"spinoff": {{ with .Params.Spinoff }}{{.}}{{ else }}false{{ end }}
+"watch": {{ .Params.Watch | jsonify }},
+"description": "{{ .Params.Description }}"
+}

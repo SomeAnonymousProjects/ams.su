@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {{ $title := printf "Теги | %s" .Site.Title }}
+    <title>{{ $title }}</title>
+    <meta property="og:title" content="{{ $title }}"/>
+    <meta name="twitter:title" content="{{ $title }}"/>
+    <meta itemprop="name" content="{{ $title }}"/>
+    <meta name="application-name" content="{{ $title }}"/>
+    <meta property="og:site_name" content="{{ $title }}"/>
+
+    {{ $desc := .Site.Params.description }}
+    <meta name="description" content="{{ $desc }}"/>
+    <meta itemprop="description" content="{{ $desc }}"/>
+    <meta property="og:description" content="{{ $desc }}"/>
+    <meta name="twitter:description" content="{{ $desc }}"/>
+
+    <base href="{{ .Permalink }}">
+    <link rel="canonical" href="{{ .Permalink }}" itemprop="url"/>
+    <meta name="url" content="{{ .Permalink }}"/>
+    <meta name="twitter:url" content="{{ .Permalink }}"/>
+    <meta property="og:url" content="{{ .Permalink }}"/>
+
+    <!-- Sitemap & RSS Feed Tags -->
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ .Site.BaseURL }}sitemap.xml"/>
+
+    {{ with .OutputFormats.Get "RSS" }}
+    {{ printf `<link rel="%s" type="%s" href="%s" title="%s"/>` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+    {{ end }}
+
+    <!-- Search Engine Crawler Tags -->
+    <meta name="robots" content="index,follow"/>
+    <meta name="googlebot" content="index,follow"/>
+
+    <!-- фон для плитки с иконкой -->
+    <meta name="msapplication-TileColor" content="#da532c">
+
+    <!-- фон адресной строки -->
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="manifest" href="{{ "/site.webmanifest" | relURL }}">
+
+    <link rel="shortcut icon"                          href="{{ "/favicon.ico" | relURL }}" />
+    <link rel="icon" type="image/x-icon" sizes="32x32" href="{{ "/favicon.ico" | relURL }}" />
+    <link rel="icon" type="image/x-icon" sizes="16x16" href="{{ "/favicon.ico" | relURL }}" />
+    <link rel="icon" type="image/png" sizes="16x16"    href="{{ "/img/icons/favicon-016x016.png" | relURL }}" />
+    <link rel="icon" type="image/png" sizes="32x32"    href="{{ "/img/icons/favicon-032x032.png" | relURL }}" />
+    <link rel="icon" type="image/png" sizes="192x192"  href="{{ "/img/icons/favicon-192x192.png" | relURL }}" />
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ "/img/icons/favicon-152x152.png" | relURL }}" />
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ "/img/icons/favicon-144x144.png" | relURL }}" />
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ "/img/icons/favicon-120x120.png" | relURL }}" />
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ "/img/icons/favicon-114x114.png" | relURL }}" />
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ "/img/icons/favicon-180x180.png" | relURL }}" />
+    <link rel="apple-touch-icon" sizes="72x72"   href="{{ "/img/icons/favicon-072x072.png" | relURL }}" />
+    <link rel="apple-touch-icon"                 href="{{ "/img/icons/favicon.png" | relURL }}" />
+
+
+    <meta property="og:locale" content="{{ .Language.Lang }}">
+    <meta name="language" content="{{ .Language.LanguageName }}">
+    {{ range .AllTranslations }}
+    <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" title="{{ .Language.LanguageName }}">
+    {{ end }}
+
+    {{ $twitter_card := "summary_large_image" }}
+    <meta property="twitter:card" content="{{ $twitter_card }}">
+    <meta property="twitter:site" content="@AnonymousProjectsOfficial">
+    <meta property="twitter:creator" content="@AnonymousProjectsOfficial">
+
+    <meta name="keywords" content=""/>
+    <meta name="imagemode" content="force"/>
+    <meta name="coverage" content="Worldwide"/>
+    <meta name="distribution" content="Global"/>
+    <meta name="HandheldFriendly" content="True"/>
+    <meta name="msapplication-tap-highlight" content="no"/>
+    <meta name="apple-mobile-web-app-title" content="{{ .Site.Title }}"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <meta name="apple-touch-fullscreen" content="yes"/>
+
+    {{ $options := (dict "targetPath" "css/style.css" "outputStyle" "compressed" "enableSourceMap" true) }}
+    {{ $style := resources.Get "sass/term.scss" | resources.ExecuteAsTemplate "term.scss" . | resources.ToCSS $options | resources.Minify | resources.Fingerprint }}
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}">
+
+</head>
+<body class="tags">
+<header>
+    <a href="{{ .Site.BaseURL }}" class="logo-link"><span>A</span><span>M</span><span>S</span></a>
+    <h1 class="page-title">{{ .Site.Title }}</h1>
+</header>
+
+<main class="content">
+{{ range .Data.Pages.GroupByParam "Category" }}
+    {{ range .Pages }}
+    <a href="{{ .RelPermalink }}" class="term-link">{{ .Title }}{{ if .Params.Titles }}{{ with (index .Params.Titles .Language) }} / {{ . }}{{ end }}{{ end }} ({{ .Date.Format "2006" }})</a>
+    {{ end }}
+{{ end }}
+</main>
+
+<footer>
+    <p class="copyright">&copy; Advanced Media Storage {{ now.Year }}</p>
+</footer>
+</body>
+</html>

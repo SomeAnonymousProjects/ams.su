@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="{{ .Language }}">
+<head itemscope itemtype="{{ .Site.BaseURL }}">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    {{ $title := .Site.Title | default "Advanced Media Storage" }}
+    <title>{{ $title }}</title>
+    <meta property="og:title" content="{{ $title }}"/>
+    <meta name="twitter:title" content="{{ $title }}"/>
+    <meta itemprop="name" content="{{ $title }}"/>
+    <meta name="application-name" content="{{ $title }}"/>
+    <meta property="og:site_name" content="{{ $title }}"/>
+
+    {{ $desc := .Site.Params.description }}
+    <meta name="description" content="{{ $desc }}"/>
+    <meta itemprop="description" content="{{ $desc }}"/>
+    <meta property="og:description" content="{{ $desc }}"/>
+    <meta name="twitter:description" content="{{ $desc }}"/>
+
+    <base href="{{ .Permalink }}">
+    <link rel="canonical" href="{{ .Permalink }}" itemprop="url"/>
+    <meta name="url" content="{{ .Permalink }}"/>
+    <meta name="twitter:url" content="{{ .Permalink }}"/>
+    <meta property="og:url" content="{{ .Permalink }}"/>
+
+    <!-- Sitemap & RSS Feed Tags -->
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ .Site.BaseURL }}sitemap.xml"/>
+
+    {{ with .OutputFormats.Get "RSS" }}
+    {{ printf `<link rel="%s" type="%s" href="%s" title="%s"/>` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+    {{ end }}
+
+    <!-- Search Engine Crawler Tags -->
+    <meta name="robots" content="index,follow"/>
+    <meta name="googlebot" content="index,follow"/>
+
+    <!-- фон для плитки с иконкой -->
+    <meta name="msapplication-TileColor" content="#da532c">
+
+    <!-- фон адресной строки -->
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="manifest" href="{{ "/site.webmanifest" | relURL }}">
+
+    <link rel="shortcut icon"                          href="{{ "/favicon.ico" | relURL }}" />
+    <link rel="icon" type="image/x-icon" sizes="32x32" href="{{ "/favicon.ico" | relURL }}" />
+    <link rel="icon" type="image/x-icon" sizes="16x16" href="{{ "/favicon.ico" | relURL }}" />
+    <link rel="icon" type="image/png" sizes="16x16"    href="{{ "/img/icons/favicon-016x016.png" | relURL }}" />
+    <link rel="icon" type="image/png" sizes="32x32"    href="{{ "/img/icons/favicon-032x032.png" | relURL }}" />
+    <link rel="icon" type="image/png" sizes="192x192"  href="{{ "/img/icons/favicon-192x192.png" | relURL }}" />
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ "/img/icons/favicon-152x152.png" | relURL }}" />
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ "/img/icons/favicon-144x144.png" | relURL }}" />
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ "/img/icons/favicon-120x120.png" | relURL }}" />
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ "/img/icons/favicon-114x114.png" | relURL }}" />
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ "/img/icons/favicon-180x180.png" | relURL }}" />
+    <link rel="apple-touch-icon" sizes="72x72"   href="{{ "/img/icons/favicon-072x072.png" | relURL }}" />
+    <link rel="apple-touch-icon"                 href="{{ "/img/icons/favicon.png" | relURL }}" />
+
+    <meta property="og:locale" content="{{ .Language.Lang }}">
+    <meta name="language" content="{{ .Language.LanguageName }}">
+    {{ range .AllTranslations }}
+    <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" title="{{ .Language.LanguageName }}">
+    {{ end }}
+
+    {{ $twitter_card := "summary_large_image" }}
+    <meta property="twitter:card" content="{{ $twitter_card }}">
+    <meta property="twitter:site" content="@AnonymousProjectsOfficial">
+    <meta property="twitter:creator" content="@AnonymousProjectsOfficial">
+
+    <meta name="keywords" content=""/>
+    <meta name="imagemode" content="force"/>
+    <meta name="coverage" content="Worldwide"/>
+    <meta name="distribution" content="Global"/>
+    <meta name="HandheldFriendly" content="True"/>
+    <meta name="msapplication-tap-highlight" content="no"/>
+    <meta name="apple-mobile-web-app-title" content="{{ .Site.Title }}"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <meta name="apple-touch-fullscreen" content="yes"/>
+
+    <style>
+        body {
+            font-family: Consolas, monospace;
+            background-color: black;
+            color: whitesmoke;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+            outline: none;
+            color: whitesmoke;
+            border-bottom: 1px dotted #333333;
+        }
+
+        .page-1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .page-1 h1 {
+            letter-spacing: 1em;
+        }
+
+        .page-1 h1 span {
+            display: block;
+            width: 100%;
+            text-transform: uppercase;
+        }
+
+        .page-1 h1 span:first-letter {
+            background-color: whitesmoke;
+            color: black;
+            padding: 0 .5em;
+            letter-spacing: normal;
+            margin-right: .5em;
+        }
+
+        main .page {
+            padding: 2em;
+        }
+
+        main .page-2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        main .page h2 {
+            text-align: center;
+        }
+
+        main .page-2 a {
+            line-height: 2em;
+        }
+
+        main .page-2 .top-list p:hover {
+            background-color: #333333;
+        }
+
+        main .page-3 .form-search {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        main .page-3 .form-search input[type="text"] {
+            box-sizing: border-box;
+            padding-left: 1em;
+            height: 3em;
+            width: 60%;
+            border: none;
+            outline: none;
+            box-shadow: 0 0 10px whitesmoke;
+        }
+
+        main .page-3 .form-search button {
+            box-sizing: border-box;
+            border: none;
+            padding: 0 5em;
+            height: 3em;
+            outline: none;
+            box-shadow: 0 0 10px whitesmoke;
+            background-color: darkgrey;
+        }
+
+        main .page-3 .form-search button:active {
+            box-shadow: inset 0 0 5px black;
+        }
+
+        main .page-4 {
+            padding: 2em 4em;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        main .page-4 #yohoho {
+            flex: 1 1 auto;
+            box-shadow: 0 0 20px whitesmoke;
+        }
+
+        main .page-5,
+        main .page-6 {
+            text-align: center;
+        }
+
+        main .page-5 .tag-link,
+        main .page-6 .category-link {
+            display: inline-block;
+            font-size: small;
+            border: 1px dashed #777777;
+            padding: .3em .5em;
+            margin: 2px 0;
+            white-space: nowrap;
+        }
+
+        main .page-5 .tag-link:hover,
+        main .page-6 .category-link:hover {
+            background-color: whitesmoke;
+            color: black;
+        }
+
+        footer {
+            border-top: 2px solid whitesmoke;
+            margin: 1em 5vw;
+        }
+
+        footer .copyright {
+            text-align: center;
+        }
+
+        @media (max-width: 700px) {
+            main .page-2 {
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+            }
+
+            main .page-2 .top-list {
+                width: 80%;
+            }
+
+            main .page-3 .form-search {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            main .page-3 .form-search input[type="text"] {
+                width: 80%;
+                text-align: center;
+            }
+
+            main .page-3 .form-search button {
+                width: 80%;
+                margin: 2em 0;
+            }
+        }
+
+    </style>
+    <script src="{{ `js/yo.js` | absURL }}"></script>
+    <script>
+            window.smoothScrollTo = (function () {
+              var timer, start, factor;
+
+              return function (target, duration) {
+                var offset = window.pageYOffset,
+                    delta  = target - window.pageYOffset; // Y-offset difference
+                duration = duration || 1000;              // default 1 sec animation
+                start = Date.now();                       // get start time
+                factor = 0;
+
+                if( timer ) {
+                  clearInterval(timer); // stop any running animations
+                }
+
+                function step() {
+                  var y;
+                  factor = (Date.now() - start) / duration; // get interpolation factor
+                  if( factor >= 1 ) {
+                    clearInterval(timer); // stop animation
+                    factor = 1;           // clip to max 1.0
+                  }
+                  y = factor * delta + offset;
+                  window.scrollBy(0, y - window.pageYOffset);
+                }
+
+                timer = setInterval(step, 10);
+                return timer;
+              };
+            }());
+
+        document.addEventListener('DOMContentLoaded', function () {
+            let playerSection = document.querySelector('.page-4');
+            let search = document.querySelector('#search');
+            let title = document.querySelector('#search-title');
+
+            // ули в урле есть часть после #
+            if (window.location.hash) {
+                let hash = window.location.hash.substring(1);
+                if (title && hash) {
+                    playerSection.setAttribute('id', hash);
+                    smoothScrollTo(playerSection.offsetTop);
+                    title.value = decodeURIComponent(hash);
+                    parse();
+                }
+            }
+
+            // если нажата кнопка "Искать"
+            if (search) {
+                search.addEventListener('click', function () {
+                    return parse();
+                });
+            }
+
+            // если отжата Enter в поле ввода
+            if (title) {
+                title.addEventListener('keyup', function (event) {
+                    event.preventDefault();
+                    if (event.code === 'Enter') {
+                        return parse();
+                    }
+                });
+            }
+
+            function parse() {
+                let playerBlock = document.querySelector('#yohoho');
+                if (title && title.value && playerBlock) {
+                    // есть ли в строке поиска kinopoisk.ru
+                    if (/kinopoisk\.ru/i.test(title.value)) {
+                        // ищет в строке поиска слова film или movie + цифры (видимо, kinopoiskID)
+                        let exec = /(film\/|movie\/).*?([0-9]{3,7})\//gi.exec(title.value);
+                        if (exec && exec[2]) {
+                            playerBlock.dataset.kinopoisk = exec[2];
+                            window.location.hash = '#' + playerBlock.dataset.kinopoisk;
+                            document.title = 'КиноПоиск: ' + playerBlock.dataset.kinopoisk;
+                        }
+                    }
+                    // если в строке поиска цифры
+                    else if (/^\d+$/.test(title.value)) {
+                        playerBlock.dataset.kinopoisk = title.value;
+                        window.location.hash = '#' + playerBlock.dataset.kinopoisk;
+                        document.title = 'КиноПоиск: ' + playerBlock.dataset.kinopoisk;
+                    } else {
+                        playerBlock.dataset.title = encodeURIComponent(title.value);
+                        window.location.hash = '#' + playerBlock.dataset.title;
+                        document.title = title.value;
+                    }
+                    items = [];
+                    return yo();
+                }
+            }
+        })
+    </script>
+</head>
+<body>
+<header class="page page-1">
+    <h1><span>Advanced</span> <span>Media</span> <span>Storage</span></h1>
+</header>
+<main>
+    <section class="page page-3">
+        <h2>Поиск</h2>
+        <form class="form-search" id="search-form">
+            <input type="text" placeholder="Кинопоиск ID или название" id="search-title">
+            <button type="submit" id="search">Искать</button>
+        </form>
+    </section>
+    <section class="page page-4">
+        <div id="yohoho"
+             data-resize="1"
+             data-language="ru"
+             data-country="RU"
+             data-videocdn="{{ .Site.Params.videoCDN }}"
+             data-collaps="{{ .Site.Params.collapsOrg }}"
+             data-ustore="{{ .Site.Params.uStore }}"
+             data-kodik=""
+             data-hdvb=""
+             data-bazon=""
+             data-alloha=""
+             data-youtube=""
+        ></div>
+        <!--
+        data-fast="1"
+        data-separator=","
+        data-trailer="youtube,collaps"
+        data-player="videocdn,collaps,kodik,ustore,bazon,alloha,pleer,videospider,iframe,hdvb,trailer,torrent"
+        data-tv="1"
+        data-loading=""
+        -->
+    </section>
+    <section class="page page-2">
+        {{ with .Site.Data.top }}
+            {{ $tops := . }}
+            {{ if gt (len $tops) 0 }}
+                {{ range $tops }}
+                <article class="top-list">
+                    <h2>{{ .title }}</h2>
+                    {{ range $idx, $item := .top}}
+                    <p>{{ $idx }}. <a href="{{ $item.url | absURL }}" target="_blank" rel="nofollow">{{ $item.title }}</a></p>
+                    {{ end }}
+                </article>
+                {{ end }}
+            {{ end }}
+        {{ end }}
+    </section>
+    <section class="page page-5">
+    {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+        {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
+            <a href="{{ .Permalink }}" class="tag-link">{{ .LinkTitle }}</a>
+        {{ end }}
+    {{ end }}
+    </section>
+
+    <section class="page page-6">
+    {{ range $name, $taxonomy := .Site.Taxonomies.category }}
+        {{ with $.Site.GetPage (printf "/category/%s" $name) }}
+            {{ with (index $taxonomy 0) }}
+            {{ if ne .Params.hidden true }}
+            <a href="{{ .Permalink }}" class="category-link">{{ .Title }}</a>
+            {{ end }}
+            {{ end }}
+        {{ end }}
+    {{ end }}
+    </section>
+</main>
+<footer>
+    <p class="copyright">&copy; Advanced Media Storage {{ now.Year }}</p>
+</footer>
+</body>
+</html>
