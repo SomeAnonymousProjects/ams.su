@@ -6,10 +6,10 @@
     "youtube": "{{ with .Params.Source.youtube }}{{.}}{{ end }}"
     },
 "trailer": "{{ with .Params.Trailer }}{{.}}{{ end }}",
-"premiere": "{{ with .Params.Date }}{{ .Format "01.02.2006" }}{{ end }}",
+"premiere": "{{ with .Params.Date }}{{ .Format "2006-02-01" }}{{ end }}",
 "title": "{{ .Title }}",
 "titles": {{ .Params.Titles | jsonify }},
-"spinoff": {{ with .Params.Spinoff }}{{.}}{{ else }}false{{ end }}
+"spinoff": {{ with .Params.Spinoff }}{{.}}{{ else }}false{{ end }},
 "watch": {{ .Params.Watch | jsonify }},
 "description": "{{ .Params.Description }}"
 }

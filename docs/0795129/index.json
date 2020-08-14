@@ -6,10 +6,10 @@
     "youtube": ""
     },
 "trailer": "",
-"premiere": "01.01.2006",
+"premiere": "2006-01-01",
 "title": "House Hunters International",
 "titles": {"ru":"Охотники за международной недвижимостью"},
-"spinoff": false
+"spinoff": false,
 "watch": {"hgtv":"https://watch.hgtv.com/tv-shows/house-hunters-international"},
 "description": "Поиск жилья по всему миру"
 }

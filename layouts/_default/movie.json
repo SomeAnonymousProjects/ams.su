@@ -9,7 +9,7 @@
 "premiere": "{{ with .Params.Date }}{{ .Format "2006-02-01" }}{{ end }}",
 "title": "{{ .Title }}",
 "titles": {{ .Params.Titles | jsonify }},
-"spinoff": {{ with .Params.Spinoff }}{{.}}{{ else }}false{{ end }}
+"spinoff": {{ with .Params.Spinoff }}{{.}}{{ else }}false{{ end }},
 "watch": {{ .Params.Watch | jsonify }},
 "description": "{{ .Params.Description }}"
 }
