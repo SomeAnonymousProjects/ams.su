@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://ams.su/en/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://ams.su/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ams.su/en/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://ams.su/en/category/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://ams.su/category/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ams.su/en/category/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://ams.su/en/tags/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://ams.su/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://ams.su/en/tags/"
+                />
+  </url>
+  
+</urlset>

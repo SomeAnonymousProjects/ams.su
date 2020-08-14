@@ -1,0 +1,15 @@
+{
+"imdb": "tt0795129",
+"kinopoisk": "",
+"resource": {
+    "website": "https://www.hgtv.com/shows/house-hunters-international",
+    "youtube": ""
+    },
+"trailer": "",
+"premiere": "01.01.2006",
+"title": "House Hunters International",
+"titles": {"ru":"Охотники за международной недвижимостью"},
+"spinoff": false
+"watch": {"hgtv":"https://watch.hgtv.com/tv-shows/house-hunters-international"},
+"description": "Поиск жилья по всему миру"
+}
