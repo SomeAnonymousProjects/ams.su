@@ -6,7 +6,7 @@
     "youtube": "{{ with .Params.Source.youtube }}{{.}}{{ end }}"
     },
 "trailer": "{{ with .Params.Trailer }}{{.}}{{ end }}",
-"premiere": "{{ with .Params.Date }}{{ .Format "2006-02-01" }}{{ end }}",
+"premiere": "{{ with .Params.Date }}{{ .Format "2006-01-02" }}{{ end }}",
 "title": "{{ .Title }}",
 "titles": {{ .Params.Titles | jsonify }},
 "spinoff": {{ with .Params.Spinoff }}{{.}}{{ else }}false{{ end }},
