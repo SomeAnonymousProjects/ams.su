@@ -5,7 +5,7 @@ db:
 title: "House Hunters International"
 titles: 
   ru: "Охотники за международной недвижимостью"
-description: "<p>Охотники за недвижимостью и их риэлторы изучают всевозможные архитектурные стили и прорабатывают особенности покупки недвижимости в других странах.</p>"
+description: "<p>Охотники за недвижимостью и их риэлторы изучают всевозможные архитектурные стили и особенности аренды и покупки недвижимости в разных странах.</p>"
 source: 
   website: "https://www.hgtv.com/shows/house-hunters-international"
 trailer: "https://www.youtube.com/embed/zYpvT7miUXM"
