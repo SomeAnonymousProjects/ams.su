@@ -8,7 +8,7 @@ titles:
 description: "Поиск жилья по всему миру"
 source: 
   website: "https://www.hgtv.com/shows/house-hunters-international"
-trailer: ""
+trailer: "https://www.youtube.com/embed/zYpvT7miUXM"
 watch:
   hgtv: "https://watch.hgtv.com/tv-shows/house-hunters-international"
 publisher: "‎HGTV"
