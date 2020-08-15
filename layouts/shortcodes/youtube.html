@@ -1,0 +1,16 @@
+{{ with .Get "code" }}
+{{ $code := . }}
+{{ with $.Get "type" }}
+{{/* type = playlist */}}
+{{ if eq . "playlist" }}
+<iframe class="player-frame player-hide"
+        data-balancer="YouTube"
+        width="560"
+        height="315"
+        src="{{ printf "https://www.youtube.com/embed/videoseries?list=%s" $code }}"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+{{ end }}
+{{ end }}
+{{ end }}

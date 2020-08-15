@@ -397,18 +397,6 @@
         {{ end }}
     {{ end }}
     </section>
-
-    <section class="page page-6">
-    {{ range $name, $taxonomy := .Site.Taxonomies.category }}
-        {{ with $.Site.GetPage (printf "/category/%s" $name) }}
-            {{ with (index $taxonomy 0) }}
-            {{ if ne .Params.hidden true }}
-            <a href="{{ .Permalink }}" class="category-link">{{ .Title }}</a>
-            {{ end }}
-            {{ end }}
-        {{ end }}
-    {{ end }}
-    </section>
 </main>
 <footer>
     <p class="copyright">&copy; Advanced Media Storage {{ now.Year }}</p>
