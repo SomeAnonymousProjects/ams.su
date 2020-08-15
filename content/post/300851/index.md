@@ -6,7 +6,7 @@ db:
 title: "The Boondock Saints II: All Saints Day"
 titles: 
   ru: "Святые из Бундока 2: День всех святых"
-description: "Не было слышно про братьев МакМанус, Коннора и Мерфи, 8 лет. Но тут ирландцам пришлось вернуться в Бостон..."
+description: "<p>Не было слышно про братьев МакМанус, Коннора и Мерфи, 8 лет. Но тут ирландцам пришлось вернуться в Бостон...</p>"
 source: 
   website: "https://www.sonypictures.com/movies/theboondocksaintsiiallsaintsday"
   youtube: "https://www.youtube.com/user/realboondocksaints"

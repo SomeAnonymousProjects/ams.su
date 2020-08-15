@@ -6,7 +6,7 @@ db:
 title: "The Boondock Saints"
 titles: 
   ru: "Святые из Бундока"
-description: "На братьев МакМанус, Коннора и Мерфи, (ирландцев из Бостона)  снизошло озарение..."
+description: "<p>На братьев МакМанус, Коннора и Мерфи, (ирландцев из Бостона)  снизошло озарение...</p>"
 source: 
   website: "https://www.boondocksaints.com/"
   youtube: "https://www.youtube.com/user/realboondocksaints"
