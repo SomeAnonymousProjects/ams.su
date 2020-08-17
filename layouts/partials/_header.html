@@ -1,0 +1,8 @@
+<header>
+    <a href="{{ .Site.BaseURL }}" class="logo-link"><span>A</span><span>M</span><span>S</span></a>
+    {{ if eq .Section "post" }}
+    <h1 class="page-title"><span>{{ .Title }}</span>{{ with (index .Params.Titles .Language) }} &middot; <span>{{ . }}</span>{{ end }}</h1>
+    {{ else }}
+    <h1 class="page-title">{{ .Title }}</h1>
+    {{ end }}
+</header>

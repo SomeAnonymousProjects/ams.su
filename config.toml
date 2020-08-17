@@ -6,6 +6,7 @@ enableGitInfo = "true"
 
 [permalinks]
   "post" = "/:filename"
+  "page" = "/:filename"
 
 [params]
   subtitle = "Видео со всего мира"
