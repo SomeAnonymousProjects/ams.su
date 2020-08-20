@@ -1,0 +1,15 @@
+{{ with .Get "code" }}
+{{ $code := . }}
+{{ with $.Get "type" }}
+{{/* type = serial */}}
+{{ $type := . }}
+<iframe class="player-frame player-hide"
+        data-balancer="Kodik"
+        src="{{ printf "http://aniqit.com/%s%s" $type $code }}"
+        width="{{ $.Get "width" | default "640" }}"
+        height="{{ $.Get "height" | default "480" }}"
+        frameborder="0"
+        allowfullscreen allow="autoplay *; fullscreen *"
+></iframe>
+{{ end }}
+{{ end }}

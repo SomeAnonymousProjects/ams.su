@@ -103,27 +103,6 @@ main .page-4 #yohoho {
   box-shadow: 0 0 20px whitesmoke;
 }
 
-main .page-5,
-main .page-6 {
-  text-align: center;
-}
-
-main .page-5 .tag-link,
-main .page-6 .category-link {
-  display: inline-block;
-  font-size: small;
-  border: 1px dashed #777777;
-  padding: .3em .5em;
-  margin: 2px 0;
-  white-space: nowrap;
-}
-
-main .page-5 .tag-link:hover,
-main .page-6 .category-link:hover {
-  background-color: whitesmoke;
-  color: black;
-}
-
 .separate-page {
   main {
     box-sizing: border-box;

@@ -21,4 +21,5 @@ hidden: false
 {{<players>}}
     {{<videocdn "type"="anime-tv-series" "code"="9">}}
     {{<collapse "/embed/movie/2247">}}
+    {{<kodik "type"="serial" "code"="/4913/c351836b5175dd857cad79decdade5d0/720p">}}
 {{</players>}}

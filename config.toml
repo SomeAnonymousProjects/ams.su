@@ -12,10 +12,6 @@ enableGitInfo = "true"
   subtitle = "Видео со всего мира"
   description = "Смотреть видео онлайн бесплатно"
   googleTagManagerId = "GTM-A2CDIFG"
-  collapsOrg = "debdfb607b14c06c81fb3e1c6a649503"
-  videoCDN = "wiUn3VxP5IQ6Y5gDrdARiUSFtwacPsxg"
-  uStore = "ac5d5d6a109f7b2454829d66aafe9b4b"
-  kodik = "21c5405340577c86a29a5e233be60783"
 
 [languages]
   [languages.ru]

@@ -137,7 +137,7 @@
              data-videocdn="{{ .Site.Params.videoCDN }}"
              data-collaps="{{ .Site.Params.collapsOrg }}"
              data-ustore="{{ .Site.Params.uStore }}"
-             data-kodik=""
+             data-kodik="{{ .Site.Params.kodik }}"
              data-hdvb=""
              data-bazon=""
              data-alloha=""
@@ -166,13 +166,6 @@
                 {{ end }}
             {{ end }}
         {{ end }}
-    </section>
-    <section class="page page-5">
-    {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
-        {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
-            <a href="{{ .Permalink }}" class="tag-link">{{ .LinkTitle }}</a>
-        {{ end }}
-    {{ end }}
     </section>
 </main>
 {{- partial "_footer.html" . -}}
