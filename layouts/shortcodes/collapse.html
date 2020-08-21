@@ -1,5 +1,5 @@
 {{ with .Get 0 }}
-{{ $apiUrl := printf "https://api%d.apicollaps.cc/embed-domain?token=%s" now.Unix $.Site.Params.collapsOrg }}
+{{ $apiUrl := printf "https://api%d.apicollaps.cc/embed-domain?token=%s" now.Unix "debdfb607b14c06c81fb3e1c6a649503" }}
 {{ $apiRqDomain := getJSON $apiUrl }}
 {{ $domain := index $apiRqDomain "domain" }}
 {{ $uri := . }}
