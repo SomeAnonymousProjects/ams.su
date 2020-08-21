@@ -39,7 +39,12 @@
   
   <url>
     <loc>https://ams.su/1447972/</loc>
-    <lastmod>2010-05-19T00:00:00+00:00</lastmod>
+    <lastmod>2020-08-22T00:22:57+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ams.su/0775539/</loc>
+    <lastmod>2007-01-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -55,6 +60,11 @@
   <url>
     <loc>https://ams.su/0414852/</loc>
     <lastmod>2020-08-21T02:30:05+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ams.su/0365957/</loc>
+    <lastmod>2004-01-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -109,12 +119,17 @@
   
   <url>
     <loc>https://ams.su/1718903/</loc>
-    <lastmod>2012-03-29T00:00:00+00:00</lastmod>
+    <lastmod>2020-08-22T00:22:57+03:00</lastmod>
   </url>
   
   <url>
     <loc>https://ams.su/course3/</loc>
     <lastmod>2020-08-14T14:46:29+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ams.su/1533817/</loc>
+    <lastmod>2010-06-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -334,7 +349,7 @@
   
   <url>
     <loc>https://ams.su/</loc>
-    <lastmod>2020-08-21T16:39:07+03:00</lastmod>
+    <lastmod>2020-08-22T00:22:57+03:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -350,7 +365,7 @@
   
   <url>
     <loc>https://ams.su/category/</loc>
-    <lastmod>2020-08-21T16:39:07+03:00</lastmod>
+    <lastmod>2020-08-22T00:22:57+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -375,7 +390,7 @@
   
   <url>
     <loc>https://ams.su/post/</loc>
-    <lastmod>2020-08-21T16:39:07+03:00</lastmod>
+    <lastmod>2020-08-22T00:22:57+03:00</lastmod>
   </url>
   
   <url>
@@ -385,7 +400,7 @@
   
   <url>
     <loc>https://ams.su/tags/</loc>
-    <lastmod>2020-08-21T16:39:07+03:00</lastmod>
+    <lastmod>2020-08-22T00:22:57+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -440,17 +455,17 @@
   
   <url>
     <loc>https://ams.su/tags/drama/</loc>
-    <lastmod>2020-08-21T16:39:07+03:00</lastmod>
+    <lastmod>2020-08-22T00:22:57+03:00</lastmod>
   </url>
   
   <url>
     <loc>https://ams.su/tags/music/</loc>
-    <lastmod>2020-08-21T16:39:07+03:00</lastmod>
+    <lastmod>2020-08-22T00:22:57+03:00</lastmod>
   </url>
   
   <url>
     <loc>https://ams.su/tags/romance/</loc>
-    <lastmod>2020-08-21T16:39:07+03:00</lastmod>
+    <lastmod>2020-08-22T00:22:57+03:00</lastmod>
   </url>
   
   <url>
@@ -505,12 +520,17 @@
   
   <url>
     <loc>https://ams.su/category/streetdance/</loc>
-    <lastmod>2012-03-29T00:00:00+00:00</lastmod>
+    <lastmod>2020-08-22T00:22:57+03:00</lastmod>
   </url>
   
   <url>
     <loc>https://ams.su/category/course2/</loc>
     <lastmod>2020-08-14T14:46:29+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ams.su/category/stombtheyard/</loc>
+    <lastmod>2010-06-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -556,6 +576,11 @@
   <url>
     <loc>https://ams.su/category/yamakasi/</loc>
     <lastmod>2020-08-21T02:30:05+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ams.su/category/yougotserved/</loc>
+    <lastmod>2004-01-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
