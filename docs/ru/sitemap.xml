@@ -19,6 +19,11 @@
   
   <url>
     <loc>https://ams.su/course173/</loc>
+    <lastmod>2020-08-23T00:11:51+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ams.su/course176/</loc>
     <lastmod>2017-01-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -169,6 +174,11 @@
   
   <url>
     <loc>https://ams.su/course174/</loc>
+    <lastmod>2020-08-23T00:11:51+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ams.su/course177/</loc>
     <lastmod>2017-01-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -319,6 +329,11 @@
   
   <url>
     <loc>https://ams.su/course175/</loc>
+    <lastmod>2020-08-23T00:11:51+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ams.su/course178/</loc>
     <lastmod>2017-01-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -435,6 +450,11 @@
   <url>
     <loc>https://ams.su/course168/</loc>
     <lastmod>2020-08-22T23:17:05+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ams.su/course179/</loc>
+    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -1064,7 +1084,7 @@
   
   <url>
     <loc>https://ams.su/</loc>
-    <lastmod>2020-08-22T23:17:05+03:00</lastmod>
+    <lastmod>2020-08-23T00:11:51+03:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -1080,7 +1100,7 @@
   
   <url>
     <loc>https://ams.su/category/</loc>
-    <lastmod>2020-08-22T23:17:05+03:00</lastmod>
+    <lastmod>2020-08-23T00:11:51+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1110,12 +1130,12 @@
   
   <url>
     <loc>https://ams.su/post/</loc>
-    <lastmod>2020-08-22T23:17:05+03:00</lastmod>
+    <lastmod>2020-08-23T00:11:51+03:00</lastmod>
   </url>
   
   <url>
     <loc>https://ams.su/tags/</loc>
-    <lastmod>2020-08-22T23:17:05+03:00</lastmod>
+    <lastmod>2020-08-23T00:11:51+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1165,17 +1185,22 @@
   
   <url>
     <loc>https://ams.su/category/course21/</loc>
+    <lastmod>2020-08-23T00:11:51+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ams.su/category/course22/</loc>
     <lastmod>2017-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://ams.su/tags/linux/</loc>
-    <lastmod>2020-08-22T22:54:02+03:00</lastmod>
+    <lastmod>2020-08-23T00:11:51+03:00</lastmod>
   </url>
   
   <url>
     <loc>https://ams.su/tags/%D1%81%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%B8%D1%81%D1%82/</loc>
-    <lastmod>2020-08-22T14:59:36+03:00</lastmod>
+    <lastmod>2020-08-23T00:11:51+03:00</lastmod>
   </url>
   
   <url>
