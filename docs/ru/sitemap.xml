@@ -38,8 +38,13 @@
   </url>
   
   <url>
-    <loc>https://ams.su/course127/</loc>
+    <loc>https://ams.su/course137/</loc>
     <lastmod>2013-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ams.su/course127/</loc>
+    <lastmod>2020-08-22T20:41:26+03:00</lastmod>
   </url>
   
   <url>
@@ -173,8 +178,13 @@
   </url>
   
   <url>
-    <loc>https://ams.su/course128/</loc>
+    <loc>https://ams.su/course138/</loc>
     <lastmod>2013-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ams.su/course128/</loc>
+    <lastmod>2020-08-22T20:41:26+03:00</lastmod>
   </url>
   
   <url>
@@ -303,8 +313,13 @@
   </url>
   
   <url>
-    <loc>https://ams.su/course129/</loc>
+    <loc>https://ams.su/course139/</loc>
     <lastmod>2013-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ams.su/course129/</loc>
+    <lastmod>2020-08-22T20:41:26+03:00</lastmod>
   </url>
   
   <url>
@@ -393,8 +408,13 @@
   </url>
   
   <url>
-    <loc>https://ams.su/course130/</loc>
+    <loc>https://ams.su/course140/</loc>
     <lastmod>2013-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ams.su/course130/</loc>
+    <lastmod>2020-08-22T20:41:26+03:00</lastmod>
   </url>
   
   <url>
@@ -493,8 +513,13 @@
   </url>
   
   <url>
-    <loc>https://ams.su/course131/</loc>
+    <loc>https://ams.su/course141/</loc>
     <lastmod>2013-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ams.su/course131/</loc>
+    <lastmod>2020-08-22T20:41:26+03:00</lastmod>
   </url>
   
   <url>
@@ -574,7 +599,7 @@
   
   <url>
     <loc>https://ams.su/course132/</loc>
-    <lastmod>2013-01-01T00:00:00+00:00</lastmod>
+    <lastmod>2020-08-22T20:41:26+03:00</lastmod>
   </url>
   
   <url>
@@ -634,7 +659,7 @@
   
   <url>
     <loc>https://ams.su/course133/</loc>
-    <lastmod>2013-01-01T00:00:00+00:00</lastmod>
+    <lastmod>2020-08-22T20:41:26+03:00</lastmod>
   </url>
   
   <url>
@@ -684,7 +709,7 @@
   
   <url>
     <loc>https://ams.su/course134/</loc>
-    <lastmod>2013-01-01T00:00:00+00:00</lastmod>
+    <lastmod>2020-08-22T20:41:26+03:00</lastmod>
   </url>
   
   <url>
@@ -734,7 +759,7 @@
   
   <url>
     <loc>https://ams.su/course135/</loc>
-    <lastmod>2013-01-01T00:00:00+00:00</lastmod>
+    <lastmod>2020-08-22T20:41:26+03:00</lastmod>
   </url>
   
   <url>
@@ -774,7 +799,7 @@
   
   <url>
     <loc>https://ams.su/course136/</loc>
-    <lastmod>2013-01-01T00:00:00+00:00</lastmod>
+    <lastmod>2020-08-22T20:41:26+03:00</lastmod>
   </url>
   
   <url>
@@ -869,7 +894,7 @@
   
   <url>
     <loc>https://ams.su/</loc>
-    <lastmod>2020-08-22T16:52:15+03:00</lastmod>
+    <lastmod>2020-08-22T20:41:26+03:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -885,7 +910,7 @@
   
   <url>
     <loc>https://ams.su/category/</loc>
-    <lastmod>2020-08-22T16:52:15+03:00</lastmod>
+    <lastmod>2020-08-22T20:41:26+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -910,7 +935,7 @@
   
   <url>
     <loc>https://ams.su/post/</loc>
-    <lastmod>2020-08-22T16:52:15+03:00</lastmod>
+    <lastmod>2020-08-22T20:41:26+03:00</lastmod>
   </url>
   
   <url>
@@ -920,7 +945,7 @@
   
   <url>
     <loc>https://ams.su/tags/</loc>
-    <lastmod>2020-08-22T16:52:15+03:00</lastmod>
+    <lastmod>2020-08-22T20:41:26+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -985,7 +1010,7 @@
   
   <url>
     <loc>https://ams.su/tags/hexlet/</loc>
-    <lastmod>2020-08-22T16:52:15+03:00</lastmod>
+    <lastmod>2020-08-22T20:41:26+03:00</lastmod>
   </url>
   
   <url>
@@ -1030,7 +1055,7 @@
   
   <url>
     <loc>https://ams.su/tags/php/</loc>
-    <lastmod>2020-08-22T16:52:15+03:00</lastmod>
+    <lastmod>2020-08-22T20:41:26+03:00</lastmod>
   </url>
   
   <url>
@@ -1060,6 +1085,11 @@
   
   <url>
     <loc>https://ams.su/category/course16/</loc>
+    <lastmod>2020-08-22T20:41:26+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ams.su/category/course17/</loc>
     <lastmod>2013-01-01T00:00:00+00:00</lastmod>
   </url>
   
