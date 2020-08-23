@@ -1,0 +1,11 @@
+{{ with .Get "code" }}
+{{ $code := . }}
+<iframe class="player-frame player-hide"
+        data-balancer="SeasonVar{{ with $.Get "title"}} ({{.}}){{ end }}"
+        width="{{ $.Get "width" | default "640" }}"
+        height="{{ $.Get "height" | default "480" }}"
+        src="{{ printf "//datalock.ru/player/%s" $code }}"
+        frameborder="0"
+        allowfullscreen></iframe>
+{{ end }}
+
