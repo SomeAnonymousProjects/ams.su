@@ -133,6 +133,11 @@
   </url>
   
   <url>
+    <loc>https://ams.su/1235099/</loc>
+    <lastmod>2009-01-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ams.su/0775539/</loc>
     <lastmod>2020-08-22T01:26:42+03:00</lastmod>
   </url>
@@ -145,6 +150,11 @@
   <url>
     <loc>https://ams.su/0795129/</loc>
     <lastmod>2020-08-15T21:16:40+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ams.su/0412142/</loc>
+    <lastmod>2004-11-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -184,7 +194,7 @@
   
   <url>
     <loc>https://ams.su/0108847/</loc>
-    <lastmod>1994-09-11T00:00:00+00:00</lastmod>
+    <lastmod>2020-08-23T17:13:09+03:00</lastmod>
   </url>
   
   <url>
@@ -1499,7 +1509,7 @@
   
   <url>
     <loc>https://ams.su/</loc>
-    <lastmod>2020-08-23T15:54:22+03:00</lastmod>
+    <lastmod>2020-08-23T17:13:09+03:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -1515,7 +1525,7 @@
   
   <url>
     <loc>https://ams.su/category/</loc>
-    <lastmod>2020-08-23T15:54:22+03:00</lastmod>
+    <lastmod>2020-08-23T17:13:09+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1545,12 +1555,12 @@
   
   <url>
     <loc>https://ams.su/post/</loc>
-    <lastmod>2020-08-23T15:54:22+03:00</lastmod>
+    <lastmod>2020-08-23T17:13:09+03:00</lastmod>
   </url>
   
   <url>
     <loc>https://ams.su/tags/</loc>
-    <lastmod>2020-08-23T15:54:22+03:00</lastmod>
+    <lastmod>2020-08-23T17:13:09+03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -1655,12 +1665,12 @@
   
   <url>
     <loc>https://ams.su/tags/adventure/</loc>
-    <lastmod>2020-08-21T02:30:05+03:00</lastmod>
+    <lastmod>2020-08-23T17:13:09+03:00</lastmod>
   </url>
   
   <url>
     <loc>https://ams.su/tags/comedy/</loc>
-    <lastmod>2020-08-19T23:34:19+03:00</lastmod>
+    <lastmod>2020-08-23T17:13:09+03:00</lastmod>
   </url>
   
   <url>
@@ -1844,6 +1854,16 @@
   </url>
   
   <url>
+    <loc>https://ams.su/category/lietome/</loc>
+    <lastmod>2009-01-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ams.su/tags/mystery/</loc>
+    <lastmod>2009-01-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ams.su/category/savethelastdance/</loc>
     <lastmod>2020-08-21T02:30:05+03:00</lastmod>
   </url>
@@ -1861,6 +1881,11 @@
   <url>
     <loc>https://ams.su/tags/tv/</loc>
     <lastmod>2020-08-15T21:16:40+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ams.su/category/housemd/</loc>
+    <lastmod>2004-11-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -1885,12 +1910,12 @@
   
   <url>
     <loc>https://ams.su/tags/animation/</loc>
-    <lastmod>1994-09-11T00:00:00+00:00</lastmod>
+    <lastmod>2020-08-23T17:13:09+03:00</lastmod>
   </url>
   
   <url>
     <loc>https://ams.su/category/magicschoolbus/</loc>
-    <lastmod>1994-09-11T00:00:00+00:00</lastmod>
+    <lastmod>2020-08-23T17:13:09+03:00</lastmod>
   </url>
   
   <url>
