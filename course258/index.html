@@ -1,0 +1,139 @@
+<!doctype html><html lang=ru>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
+<meta http-equiv=x-ua-compatible content="ie=edge">
+<title>Базовый SQL:Advanced Media Storage</title>
+<meta property="og:title" content="Базовый SQL">
+<meta name=twitter:title content="Базовый SQL">
+<meta itemprop=name content="Базовый SQL">
+<meta name=application-name content="Базовый SQL">
+<meta property="og:site_name" content="Базовый SQL">
+<meta name=description content="Многотабличные запросы. Практикум создание связей многие-ко-многим">
+<meta itemprop=description content="Многотабличные запросы. Практикум создание связей многие-ко-многим">
+<meta property="og:description" content="Многотабличные запросы. Практикум создание связей многие-ко-многим">
+<meta name=twitter:description content="Многотабличные запросы. Практикум создание связей многие-ко-многим">
+<base href=https://ams.su/course258/>
+<link rel=canonical href=https://ams.su/course258/ itemprop=url>
+<meta name=url content="https://ams.su/course258/">
+<meta name=twitter:url content="https://ams.su/course258/">
+<meta property="og:url" content="https://ams.su/course258/">
+<link rel=sitemap type=application/xml title=Sitemap href=https://ams.su/sitemap.xml>
+<meta name=robots content="index,follow">
+<meta name=googlebot content="index,follow">
+<meta name=msapplication-TileColor content="#da532c">
+<meta name=theme-color content="#ffffff">
+<link rel=manifest href=/site.webmanifest>
+<link rel="shortcut icon" href=/favicon.ico>
+<link rel=icon type=image/x-icon sizes=32x32 href=/favicon.ico>
+<link rel=icon type=image/x-icon sizes=16x16 href=/favicon.ico>
+<link rel=icon type=image/png sizes=16x16 href=/img/icons/favicon-016x016.png>
+<link rel=icon type=image/png sizes=32x32 href=/img/icons/favicon-032x032.png>
+<link rel=icon type=image/png sizes=192x192 href=/img/icons/favicon-192x192.png>
+<link rel=apple-touch-icon sizes=152x152 href=/img/icons/favicon-152x152.png>
+<link rel=apple-touch-icon sizes=144x144 href=/img/icons/favicon-144x144.png>
+<link rel=apple-touch-icon sizes=120x120 href=/img/icons/favicon-120x120.png>
+<link rel=apple-touch-icon sizes=114x114 href=/img/icons/favicon-114x114.png>
+<link rel=apple-touch-icon sizes=180x180 href=/img/icons/favicon-180x180.png>
+<link rel=apple-touch-icon sizes=72x72 href=/img/icons/favicon-072x072.png>
+<link rel=apple-touch-icon href=/img/icons/favicon.png>
+<meta property="og:locale" content="ru">
+<meta name=language content="Русский">
+<link rel=alternate hreflang=ru href=https://ams.su/course258/ title=Русский>
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:site" content="@AnonymousProjectsOfficial">
+<meta property="twitter:creator" content="@AnonymousProjectsOfficial">
+<meta name=keywords content>
+<meta name=imagemode content="force">
+<meta name=coverage content="Worldwide">
+<meta name=distribution content="Global">
+<meta name=HandheldFriendly content="True">
+<meta name=msapplication-tap-highlight content="no">
+<meta name=apple-mobile-web-app-title content="Advanced Media Storage">
+<meta name=apple-mobile-web-app-capable content="yes">
+<meta name=apple-mobile-web-app-status-bar-style content="black-translucent">
+<meta name=apple-touch-fullscreen content="yes">
+<link rel=stylesheet href=/css/style.min.acd952641ef8cdf8194cbef86760972d29b36f9daa41a2ef0fc0bd77e1a4e400.css integrity="sha256-rNlSZB74zfgZTL74Z2CXLSmzb52qQaLvD8C9d+Gk5AA=">
+</head>
+<body class=course>
+<header>
+<a href=https://ams.su/ class=logo-link><span>A</span><span>M</span><span>S</span></a>
+<h1 class=course-title>Базовый SQL</h1>
+</header>
+<main class=content>
+<nav class=lesson-list>
+<a href=https://ams.su/course1/ class=lesson-link>1. Введение</a>
+<a href=https://ams.su/course207/ class=lesson-link>2. Введение. Установка EasyPHP</a>
+<a href=https://ams.su/course208/ class=lesson-link>3. Введение. Напутствие</a>
+<a href=https://ams.su/course209/ class=lesson-link>4. Создание таблиц. Принципы работы баз данных</a>
+<a href=https://ams.su/course210/ class=lesson-link>5. Создание таблиц. Реляционные базы данных</a>
+<a href=https://ams.su/course211/ class=lesson-link>6. Создание таблиц. Практикум создание базы данных</a>
+<a href=https://ams.su/course212/ class=lesson-link>7. Создание таблиц. Создание простых таблиц</a>
+<a href=https://ams.su/course213/ class=lesson-link>8. Создание таблиц. Целочисленные поля</a>
+<a href=https://ams.su/course214/ class=lesson-link>9. Создание таблиц. Вещественные поля</a>
+<a href=https://ams.su/course215/ class=lesson-link>10. Создание таблиц. Строковые поля</a>
+<a href=https://ams.su/course216/ class=lesson-link>12. Создание таблиц. Дата и время</a>
+<a href=https://ams.su/course217/ class=lesson-link>13. Создание таблиц. NULL троичная логика</a>
+<a href=https://ams.su/course218/ class=lesson-link>14. Создание таблиц. ENUM и SET</a>
+<a href=https://ams.su/course219/ class=lesson-link>15. Создание таблиц. Значения по умолчанию</a>
+<a href=https://ams.su/course220/ class=lesson-link>16. Добавление, изменение, удаление данных. Добавление данных</a>
+<a href=https://ams.su/course221/ class=lesson-link>17. Добавление, изменение, удаление данных. Добавление результатов запросов</a>
+<a href=https://ams.su/course222/ class=lesson-link>19. Добавление, изменение, удаление данных. Обновление данных</a>
+<a href=https://ams.su/course223/ class=lesson-link>20. Добавление, изменение, удаление данных. Условный оператор CASE</a>
+<a href=https://ams.su/course224/ class=lesson-link>21. Добавление, изменение, удаление данных. Удаление данных</a>
+<a href=https://ams.su/course225/ class=lesson-link>22. Выборка данных и индексы. Выборка данных и условия</a>
+<a href=https://ams.su/course226/ class=lesson-link>23. Выборка данных и индексы. Сортировка и ограничения данных</a>
+<a href=https://ams.su/course227/ class=lesson-link>24. Выборка данных и индексы. Первичный ключ</a>
+<a href=https://ams.su/course228/ class=lesson-link>25. Выборка данных и индексы. Индексы</a>
+<a href=https://ams.su/course229/ class=lesson-link>26. Выборка данных и индексы. Практикум добавление и удаление индексов</a>
+<a href=https://ams.su/course230/ class=lesson-link>27. Изменение таблиц и поиск текста. Декомпозиция и нормализация</a>
+<a href=https://ams.su/course231/ class=lesson-link>28. Изменение таблиц и поиск текста. Добавление и удаление столбцов</a>
+<a href=https://ams.su/course232/ class=lesson-link>29. Изменение таблиц и поиск текста. Практикум изменение таблицы</a>
+<a href=https://ams.su/course233/ class=lesson-link>30. Изменение таблиц и поиск текста. Практикум поиск с помощью LIKE</a>
+<a href=https://ams.su/course234/ class=lesson-link>31. Изменение таблиц и поиск текста. Полнотекстовый поиск</a>
+<a href=https://ams.su/course235/ class=lesson-link>32. Вспомогательные функции и группировка данных. Псевдонимы (алиасы)</a>
+<a href=https://ams.su/course236/ class=lesson-link>33. Вспомогательные функции и группировка данных. Математические функции</a>
+<a href=https://ams.su/course237/ class=lesson-link>34. Вспомогательные функции и группировка данных. Строковые функции</a>
+<a href=https://ams.su/course238/ class=lesson-link>35. Вспомогательные функции и группировка данных. Практикум работаем с датами</a>
+<a href=https://ams.su/course239/ class=lesson-link>36. Вспомогательные функции и группировка данных. Агрегатные функции</a>
+<a href=https://ams.su/course240/ class=lesson-link>37. Вспомогательные функции и группировка данных. Группировка данных</a>
+<a href=https://ams.su/course241/ class=lesson-link>38. Вспомогательные функции и группировка данных. Практикум условные группировки</a>
+<a href=https://ams.su/course242/ class=lesson-link>39. Вспомогательные функции и группировка данных. Практикум нахождение медианы</a>
+<a href=https://ams.su/course243/ class=lesson-link>40. Вложенные запросы. Вложенные запросы</a>
+<a href=https://ams.su/course244/ class=lesson-link>41. Вложенные запросы. Кванторные функции ALL и ANY</a>
+<a href=https://ams.su/course245/ class=lesson-link>42. Вложенные запросы. Практикум коррелирующие подзапросы</a>
+<a href=https://ams.su/course246/ class=lesson-link>43. Вложенные запросы. Проверка существования набора значений</a>
+<a href=https://ams.su/course247/ class=lesson-link>44. Вложенные запросы. Практикум подзапросы при выборке данных</a>
+<a href=https://ams.su/course248/ class=lesson-link>45. Вложенные запросы. Подзапросы при обновлении данных</a>
+<a href=https://ams.su/course249/ class=lesson-link>46. Многотабличные запросы. Ссылочная целостность</a>
+<a href=https://ams.su/course250/ class=lesson-link>47. Многотабличные запросы. Внешние ключи</a>
+<a href=https://ams.su/course251/ class=lesson-link>48. Многотабличные запросы. Отношения между таблицами</a>
+<a href=https://ams.su/course252/ class=lesson-link>49. Многотабличные запросы. Практикум отношение один к одному</a>
+<a href=https://ams.su/course253/ class=lesson-link>50. Многотабличные запросы. Практикум создание связей один-ко-многим</a>
+<a href=https://ams.su/course254/ class=lesson-link>51. Многотабличные запросы. Простой JOIN</a>
+<a href=https://ams.su/course255/ class=lesson-link>52. Многотабличные запросы. Внешний JOIN</a>
+<a href=https://ams.su/course256/ class=lesson-link>53. Многотабличные запросы. Объединение с помощью UNION</a>
+<a href=https://ams.su/course257/ class=lesson-link>54. Многотабличные запросы. Группировка и сортировка UNION</a>
+<a href=https://ams.su/course258/ class="lesson-link active">55. Многотабличные запросы. Практикум создание связей многие-ко-многим</a>
+<a href=https://ams.su/course259/ class=lesson-link>56. Многотабличные запросы. Выборка из трех и более таблиц</a>
+<a href=https://ams.su/course260/ class=lesson-link>57. Заключение. Хранимые процедуры, функции и триггеры</a>
+<a href=https://ams.su/course261/ class=lesson-link>58. Заключение. Поздравления</a>
+</nav>
+<section>
+<div class=player-tabs>
+<iframe class=player-frame data-balancer=Protonvideo width=810 height=475 src=https://protonvideo.to/iframe/1b547217620450fc3b536ec012b01184/ allow="autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<div class=tags-cloud>
+<a href=https://ams.su/tags/sql/ class=tag>SQL</a>
+<a href=https://ams.su/tags/ittensive/ class=tag>ITtensive</a>
+<a href=https://ams.su/tags/%D0%B1%D0%B0%D0%B7%D1%8B-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85/ class=tag>Базы данных</a>
+</div>
+</section>
+</main>
+<footer>
+<p><strong>Издатель</strong>: Центр digital-профессий ITtensive</p>
+<p><strong>Преподаватель</strong>: Николай Мацевский</p>
+<p><strong>Год</strong>: 2020</p>
+</footer>
+</body>
+</html>
